@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+ <html lang="zxx">
+  <head>
+  	<title>Templates</title>
+  	<meta name='viewport' content='width=device-width, initial-scale=1'>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  	<style>
+  		*{
+  			margin:0; padding:0;
+  		}
+  		.head{
+  			width:100%; height:70px;
+  		}
+  		.heading1{ 
+  			font-size:40px; color: #00ccff; padding-left: 140px; margin-top:30px;
+
+  		}
+  		.righthead{
+  			float:right; font-size: 20px; padding-top:0px; padding-right: 200px;
+  		}
+  		.f1{
+  			font-size:15px; padding-right: 40px;
+  		}
+  		.r1{
+  			padding-right: 40px; font-size:15px;
+  		}
+  		.btn1{
+  			padding:10px; border-radius: 20px; background-color: #007a99; color:white; font-weight: bold;
+        text-decoration: none; font-size: 15px;
+  		}
+      .btn1:hover{
+        border:2px solid #33d6ff;
+      }
+  		
+  		.section1{
+  			background-image: url("/home/cedcoss/Downloads/john-schnobrich-FlPc9_VocJ4-unsplash.jpg"); position: relative;
+  			width:100%; height: 600px; background-size: cover;
+  		}
+  		.heading2{
+  			font-size:32px;color:white; position: absolute; top:40%; left: 50%; transform: translate(-40% ,-50%);
+  		}
+  		.p1{
+  			color:white; font-size:24px; position: absolute; top:50%; left: 50%; transform: translate(-50% ,-50%); width:75%;
+  		}
+  		.name{
+  			color:#007a99; position: absolute; top:125%; left: 80%; transform: translate(-50% ,-50%); padding-top: 10px;
+  		}
+  		.btn2{
+  			background-color: #007a99; border-radius: 20px; border:2px solid #33d6ff; width:100px; color: black; font-size:15px; padding-top: 10px; padding-bottom: 10px; position: absolute; top:65%; left: 50%; transform: translate(-50% ,-50%);
+        text-decoration: none; padding-left: 23px;
+  		}
+  		.about{
+  			 width: 100%; height:500px;
+  		}
+  		.about .image{ position: relative;
+  			float:left; margin-top: 150px; margin-left: 200px; margin-bottom:100px; border-top-right-radius: 100px;
+  			border-bottom-right-radius: 100px;  border-top-left-radius: 50px; border-bottom-left-radius: 50px;
+
+  		}
+  		.imgborder{ 
+  			width:300px;height: 250px; border: 2px solid #007a99; border-top-right-radius: 50px;position:absolute;border-bottom-right-radius: 100px; border:2px solid #007a99; border-top-left-radius: 50px; border-top-right-radius: 100px;
+  			border-bottom-left-radius: 50px; z-index:1;  margin-left: 280px; margin-top: 100px; 
+  		}
+  		.content{ width:55%; padding-top: 100px; float:right; 
+  		}
+  		.heading3{
+  			color: #007a99; font-size: 42px; margin-top: 100px; margin-left: 180px; padding-top: 100px;
+  		}
+  		.s1{
+  			color: #007a99; font-size: 42px; margin-top: 100px; margin-left: 180px; padding-top: 100px;
+  		}
+  		.s2{
+  			color: #007a99; font-size: 42px; margin-top: 100px; margin-left
+  			: 180px; padding-top: 100px;
+  		}
+  		.p2{
+  			margin-left: 180px; margin-right: 180px; font-size: 18px; margin-top: 20px; color: grey;
+  		}
+  		.btn3{
+  			padding:10px; border-radius: 20px; border:2px solid #33d6ff; background-color: #007a99; color:white; font-weight: bold; margin-left: 180px; margin-top: 190px; text-decoration: none;
+  		}
+
+  		.features{
+  			 width: 100%; height:950px; 
+  		}
+  		.somefeatures{
+  			 width:100%; height:350px; position: relative;
+  		} 
+  		.f21{
+  		width:25%; height: 200px; margin-top: 80px; left:6%; position: absolute;  margin-right:50px;
+  		}
+      .f22{
+      width:25%; height: 200px; margin-top: 80px; left:37%; position: absolute;  margin-right:50px;
+      }
+      .f23{
+      width:25%; height: 200px; margin-top: 80px; left:68%; position: absolute;  margin-right:50px;
+      }
+  		.f2 .fas{
+  			margin-left: 80px; margin-bottom: 15px;
+  		}
+  		.heading6{ margin-top: 40px; font-size:38px;
+
+  		}
+  		
+  		.features .wholeimage{
+  			float:right;  width:45%; 
+  		}
+  		.features .image2{ position: relative;
+  			float:right;  margin-bottom:100px; border-top-right-radius: 100px; border-bottom-right-radius: 100px;  border-top-left-radius: 50px; border-bottom-left-radius: 50px;  margin-right: 200px; margin-top: 200px;
+
+  		}
+  		.imgborder2{ 
+  			width:300px;height: 250px; border: 2px solid #007a99; border-top-right-radius: 50px;position:absolute;  float:right;border-bottom-right-radius: 100px; border:2px solid #007a99; border-top-left-radius: 50px; border-top-right-radius: 100px; margin-top: 150px;
+  			border-bottom-left-radius: 50px; z-index:1;   
+  		}
+  		.content2{ width:53%; float:left;
+  		}
+  		.heading4{
+  			color: #007a99; font-size: 42px; padding-top: 00px; margin-left: 180px; margin-bottom:100px;
+  		}
+  		.todo {
+  			margin-left:180px; margin-top: 60px;
+  		}
+  		.track {
+  			margin-left:180px;  margin-top: 60px;
+  		}
+  		.reviews{
+  			 width:100%; height:700px;
+  		}
+  		.heading5{
+  			font-size: 36px; margin-top: 80px; text-align:center;
+  		}
+  		.s3{
+  			color: #00ccff;
+  		}
+      .dashboard{
+        background-image: url("/home/cedcoss/Downloads/giorgio-trovato-hnbd2Dmrqi0-unsplash.jpg");
+        position:relative; width:100%; height:800px; margin-top: 50px;
+      }
+  		.h9{
+        position: relative; top:3%; left:40%;transform: translate(0%,-50%); font-size: 40px; color: white;
+      }
+      .p10{
+        position: relative; top:76%; left:50%;transform: translate(-50%,-50%); width:70%; font-size: 20px; color: white; font-weight: bold;
+      }
+
+
+  		.testimonial{
+  			width:25%; height:400px; background-color: grey; margin-top: 80px; float: left; margin-right: 4%; margin-left: 4%;
+  		}
+		.p3{
+			width:70%; padding-top: 50px; text-align:center; padding-left: 50px;
+		}
+		.tes1{
+			color:white; margin-left: 130px;
+		}
+		.des1{
+			color:white; margin-left: 120px;
+		}
+		.tes2{
+			color:white; margin-left: 130px;
+		}
+		.des2{
+			color:white; margin-left: 130px;
+		}
+		.tes3{
+			color:white; margin-left: 140px;
+		}
+		.des3{
+			color:white; margin-left: 120px;
+		}
+
+    .signup{
+       width:100%; height:750px;
+    }
+    .signuphead{
+      background-color: #007a99;
+    }
+
+    .btn4{
+
+      padding:10px; border-radius: 20px; border:2px solid #33d6ff; background-color: #007a99; color:white; font-weight: bold;
+      float: right; color: #007a99; background-color: white; margin-right: 100px;margin-top: 20px;
+
+    }
+
+    .h8{ padding-left: 80px; padding-top: 30px; color: white;padding-bottom: 30px;
+
+    }
+    .signuplower{
+      background: url(/home/cedcoss/Downloads/campaign-creators-pypeCEaJeZY-unsplash.jpg),linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8));
+       position:relative;
+      background-size: cover; width:100%;  
+    }
+
+		ul li{
+			list-style: none;
+			float:left; margin-right: 15px; 	
+		}
+		.rightfoot{
+       font-size: 15px;  
+  		}
+
+
+  		
+  		
+  	</style>
+ 	
+  </head>
+  <body>
+  	<nav class="head">
+      <div class="righthead"> 
+        <a class="f1">FEATURES</a>  
+        <a class="r1">REVIEWS</a>
+        <a href="#signup" class="btn1">SIGN UP</a>
+      </div>  
+  	  <h2 class="heading1">Oslo</h2>
+  		
+  	</nav>
+  	<section class="section1">
+  		<h class="heading2"><b>Unleash Your Potentials</b></h>
+  		<p class="p1">“The big challenge is to become all that you have the possibility of becoming. You cannot believe what it does to the human spirit to maximize your human potential and stretch yourself to the limit.” <span class="name"><b>—Jim Rohn</b></span></p>
+  		<a class="btn2">Learn More</a>
+  		
+  	</section>
+
+  	<section class="about">
+  		<div >
+         <div>
+  		   <img src="/home/cedcoss/Downloads/campaign-creators-pypeCEaJeZY-unsplash.jpg" alt="hello" width="350" height="300" class="image">
+  		  <div class="imgborder"></div>
+  		 </div>    			
+  		
+  		 <div class="content">
+  			<h class="heading3">We all want our <br><span class="s1">jobs to run</span><br><span class="s2">smoothly</span></h>
+  		    <p class="p2">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "</p>
+          <p style="margin-top:40px;">   
+  		      <a class="btn3" >GET STARTED</a>
+          </p>
+
+  		 </div>
+  		</div> 
+  			 		
+  	</section>
+  	<section class="features">
+  		<h2 class="heading6" style="color: #008080; margin-bottom: 20px;">Be on the same page</h2>
+  		<div class="somefeatures">
+  		  <div class= "f21" >
+  			<i class="fas fa-bars" style="font-size: 40px; color: #33d6ff;margin-left: 150px; margin-bottom: 20px;"></i><br>
+  			<h class="h7" style="margin-left: 110px;"><b>Stay Organized</b></h><br>
+  			<p class="" style="text-align:center; margin:20px;">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  				tempor incididunt ut labore et dolore magna aliqua. "</p><br>
+  				
+  		  </div>
+  		  <div class= "f22" >
+  			<i class="fas fa-briefcase" style="font-size: 40px; color: #33d6ff; margin-left: 150px; margin-bottom: 20px;"></i><br>
+  			<h class="h7" style="margin-left: 110px; "><b>Stay Organized</b></h><br>			
+
+        <p class="" style="text-align:center; margin:20px;">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  				tempor incididunt ut labore et dolore magna aliqua. "</p><br>
+  				
+  		  </div>
+  		  <div class= "f23">
+  			<i class="far fa-handshake" style="font-size: 40px; color: #33d6ff; margin-left: 150px;margin-bottom: 20px;"></i><br>
+  			<h class="h7" style="margin-left: 110px;"><b>Stay Organized</b></h><br>
+  			<p class="" style="text-align:center; margin:20px;">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  				tempor incididunt ut labore et dolore magna aliqua. "</p><br>
+  				
+  		  </div>
+  		</div>	
+  			
+
+  		<div>
+  		 <div class="wholeimage">
+           <div>
+  		     <img src="/home/cedcoss/Downloads/campaign-creators-pypeCEaJeZY-unsplash.jpg" alt="hello" width="350" height="300" class="image2">
+  		     <div class="imgborder2"></div>
+  		  </div>
+  		 </div> 
+
+  		   			
+  		
+  		 <div class="content2">
+  			<h class="heading4" style="">Add structure to <br><span class="s1">your daily tasks</span><br></h>
+  			<div class="todo" style=""><b>TO DO List</b></div>
+  		  <p class="p2">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  "</p>
+  		  <div class="track" style="margin-top: 30px;"><b>Track Your Meetings</b></div>
+  		  <p class="p2"> Excepteur sint occaecat cupidatat non
+  		    proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+
+  		    
+
+  		 </div>
+  		</div> 
+  		
+  			 		
+  	</section>
+
+
+  	
+  	<section class="dashboard">
+      <h class="h9" style="text-align: center">Everything works better <br> when its looks better</h>
+      <p class="p10" style="text-align: center">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br>
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad <br>minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"</p>
+  	  
+  		
+  		
+  	</section >
+
+  	<section class="reviews">
+  		<h2 class="heading5">A few words from our <span class="s3"> amazing </span><br> and trusted customers</h2>
+  	<div class="testimonials">
+  			
+  		 <div class="testimonial">
+  			<p class="p3">"Lorem ipsum dolor sit amet,consectetur adipisicing elit, sed do eiusmod
+  			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  			consequat."</p>
+  			<img src="/home/cedcoss/Downloads/wYQtzXq.jpg" alt="hello" width="125" height="125" style="border-radius: 110px; margin-top:40px; margin-left: 110px;"><br>
+  			<h class="tes1"><b>James Hilter</b></h><br>
+  			<h class="des1">Project Analyst</h>
+  			
+  		 </div>
+
+  		 <div class="testimonial">
+  			<p class="p3">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  			consequat."</p>
+  			<img src="/home/cedcoss/Downloads/big.jpg" alt="hello" width="125" height="125" style="border-radius: 100px; margin-top:40px; margin-left: 110px;"><br>
+  			<h class="tes2"><b>Suzaan Fuji</b></h><br>
+  			<h class="des2">Team Leader</h>
+  			
+  		 </div>
+  		 <div class="testimonial">
+  			<p class="p3">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  			consequat."</p>
+  			<img src="/home/cedcoss/Downloads/zLCYdR9.jpg" alt="hello" width="125" height="125" style="border-radius: 110px; margin-top:40px; margin-left: 110px;"><br>
+  			<h class="tes3"><b>Tony Stark</b></h><br>
+  			<h class="des3">Software Developer</h>
+  			
+  		 </div>
+  		
+  		
+  		
+  	</div>
+  		
+  	</section>
+
+    <section class="signup" id="signup">
+      <div class="signuphead"> 
+        <button type="submit" class="btn4">SignUP Today</button>
+        <h2 class="h8">DO you want to get notified when we launch?</h2>
+        
+      </div>
+      <div class="signuplower" style="position:relative;">
+       <div style="height:650px; background-color: black; opacity: 60%; " >
+        <div style="color :#008E97;width:50%;position:absolute; top: 30%; left:10%; width:40%; font-size: 56px; ">
+          <h><b>Get Creative with <br>this revolutionary<br> tool</b></h>
+          
+          
+        </div>
+
+        <div style="width:23%; height: 400px;float: right; position:absolute; top: 20%; left:60%;  padding: 20px;">
+          <label for="name" style="color: #008E97;font-weight: bold; font-size:20px; ">Name</label><br>
+
+          <input id="name" name="name" style="margin-top: 5px; margin-bottom:15px;width:325px; height:30px; background-color: grey; border-radius: 5px; border: #007a99;text-align:center;"><br>
+
+          <label for="email" style="color: #008E97;font-weight: bold;font-size:20px; ">Email</label><br>
+
+          <input id="email" name="email" style="margin-top: 5px;margin-bottom:15px;width:325px; height:30px; background-color: grey;border-radius: 5px; border: #007a99;text-align:center;"><br>
+
+          <label for="message" style="margin-top: 20px;color: #008E97; font-weight: bold;font-size:20px; ">Message</label><br>
+
+          <input id="message" name="message" style="width:325px; height:100px;margin-top:5px;margin-bottom:15px; background-color: grey; border-radius: 5px; border: #007a99;text-align:center;">
+
+          <button type="submit" style=" background-color: #008E97; color: white;font-size:20px;width:325px; padding:5px; border-radius: 8px; margin-top: 25px;">SUBMIT</button>
+
+          
+        </div>
+       </div> 
+        
+        
+      </div>
+      
+    </section>
+
+  	<footer style="width:100%;height:100px;">
+  		
+  		<div style="width:25%; height:30px; margin-top: 50px; float: left;  margin-left: 3%; margin-right:4% ;">
+  			<ul >
+  		      <li ><a href="https://www.facebook.com"><i class="fab fa-facebook-square" style="font-size: 30px;color:black; margin-left: 20px; padding-left:40px;
+                "></i></a></li>
+  		      <li><a href="https://www.intagram.com"><i class="fab fa-instagram-square" style="font-size: 30px; color:black;margin-left: 20px;
+                "></i></a></li>
+  		      <li><a href="https://www.twitter.com"><i class="fab fa-twitter-square" style="font-size: 30px;color:black;margin-left: 20px;
+                 "></i></a></li>
+  		      <li><a href="https://www.messenger.com"><i class="fab fa-facebook-messenger" style="font-size: 30px;color:black;margin-left: 20px;
+             "></i></a></li>
+  	   </ul>
+  			
+  		</div>
+
+      <div style="width:25%; margin-top: 50px;float: left; padding-left: 100px;" >
+        <h style=" color:#007a99; padding-left: 90px;"><b>Oslo</b><br> <b><i class="fas fa-heart" style="color: #76ABDF"></i></b><b>&nbsp;Created lovingly with PageCloud</b></h>
+      </div>
+
+      <div class="rightfoot" style="width:25% ;float:right;margin-top: 50px;margin-left: 3%; margin-right:4%; "> 
+        <a class="" style="margin-right: 20px; margin-left: 60px;">Features</a>  
+        <a class="" style="margin-right: 20px;">Reviews</a>
+        <a class="" style="margin-right: 20px;">Sign Up</a>
+      </div>  		
+  		
+  	</footer>
+     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  </body>
+ 
+ 
+ 	
+ </html>
